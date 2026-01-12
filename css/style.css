@@ -16,10 +16,172 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ff4d4d;
+  background: #aca2a2;
   padding: 10px 20px;
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;
 }
+.profile-img{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #333;
+  margin-bottom:20px;
+
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav .nav-links li a:hover {
+  text-decoration: underline;
+}
+#menu-toggle {
+  display: none;
+}
+
+nav .hamburger {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+header.home {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #fff;
+}
+
+header.home h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header.home p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+header.home .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff4d4d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.projects, .contact, .video-demo, .site-report {
+  padding: 40px 20px;
+}
+
+.projects h2, .contact h2, .video-demo h2, .site-report h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #ff4d4d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #e64444;
+}
+
+
+.video-demo iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#menu-toggle:checked ~ .nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #ff4d4d;
+  width: 200px;
+  padding: 10px;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  nav .nav-links {
+    display: none;
+  }
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+  nav .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2em;
+    color: white;
+  }
+}
+
