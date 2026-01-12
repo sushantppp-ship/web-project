@@ -10,6 +10,8 @@
 
   <nav>
     <div class="logo">My Portfolio</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="project.html">Projects</a></li>
@@ -17,34 +19,118 @@
       <li><a href="videoDemo.html">Video Demo</a></li>
       <li><a href="siteReport.html">Site Report</a></li>
     </ul>
-    <div class="hamburger">&#9776;</div>
   </nav>
 
-  <section class="site-report">
-    <h2>Site Report & Reflection</h2>
-    <p>This report explains my experience of developing this portfolio website. I focused on responsive web design using HTML and CSS, CSS Grid for layouts, and clean semantic markup.</p>
-    <p>I learned to:</p>
-    <ul>
-  <li>Structured a multi-page website using proper semantic HTML5 elements.</li>
-  <li>Created responsive layouts that work well on both desktop and mobile devices.</li>
-  <li>Used CSS Grid and Flexbox to build modern and flexible page layouts.</li>
-  <li>Embedded media such as videos and screenshots to improve visual content.</li>
-  <li>Managed and updated the project using GitHub with regular commits.</li>
-</ul>
+  <main>
 
-<p>Design decisions:</p>
+    <section class="site-report">
+      <h1>Site Report & Reflective Discussion</h1>
 
-<ul>
-  <li>Used a red color accent for buttons and highlights to keep the design consistent.</li>
-  <li>Selected a simple sans-serif font to make the content easy to read.</li>
-  <li>Designed a consistent navigation system, including a hamburger menu for mobile screens.</li>
-</ul>
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          This site report describes my experience of designing and developing a responsive
+          portfolio website for the CSY1063 Web Development module. The purpose of the website
+          is to present my profile, projects, contact details, video demonstration, and this
+          reflective report using modern client-side web technologies such as HTML5 and CSS.
+        </p>
+      </section>
 
+      <section>
+        <h2>Development Process and Learning Experience</h2>
+        <p>
+          At the beginning of the module, I found web development challenging, especially
+          understanding how different HTML elements work together and how CSS affects page
+          layout. I initially relied too much on generic <code>div</code> elements, but as the
+          module progressed, I learned the importance of using semantic HTML tags such as
+          <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, and
+          <code>footer</code> to improve structure and accessibility.
+        </p>
+        <p>
+          One of the most difficult parts was working with CSS layouts. I faced issues with
+          alignment, spacing, and responsive behaviour, particularly when switching between
+          desktop and mobile views. Through experimentation, debugging, and use of browser
+          developer tools, I learned how CSS Grid and Flexbox can be used together to create
+          flexible and well-structured layouts.
+        </p>
+        <p>
+          Debugging was sometimes frustrating, especially when small errors such as incorrect
+          file paths, missing closing tags, or CSS conflicts caused the layout to break.
+          However, these challenges helped me build confidence and improved my ability to
+          identify and fix problems independently.
+        </p>
+      </section>
 
-    <h3>Validation & Screenshots</h3>
-    <img src="screenshots/screenshot1.png" alt="HTML Validation" width="600">
-    <p>Video demonstration: <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">Watch Video</a></p>
-  </section>
+      <section>
+        <h2>Design Decisions and User Interface</h2>
+        <p>
+          The website was designed with a clean and simple user interface to ensure readability
+          and ease of navigation. A consistent navigation menu is used across all pages so users
+          can easily move between sections of the site. A red accent colour was chosen for
+          buttons and highlights to create visual contrast while keeping the overall design
+          professional.
+        </p>
+        <p>
+          Responsive design was a key focus of this project. Media queries were used to adapt
+          the layout for smaller screens, and a hamburger navigation menu was implemented so
+          that the website remains usable on mobile devices. The Projects page uses a different
+          grid layout from the other pages to demonstrate my understanding of layout variation
+          using CSS Grid.
+        </p>
+      </section>
+
+      <section>
+        <h2>Validation and Technical Implementation</h2>
+        <p>
+          All HTML and CSS files were tested using the W3C HTML and CSS validation tools to
+          ensure compliance with web standards. Validation helped me identify and correct
+          syntax errors and improve the overall quality of my code. Screenshots of the
+          validation results are included below.
+        </p>
+
+        <img src="images/index.png" alt="HTML Validation Result" width="600">
+        <img src="images/contact.png" alt="HTML Validation Result" width="600">
+        <img src="images/project.png" alt="HTML Validation Result" width="600">
+        <img src="images/css.png" alt="CSS Validation Result" width="600">
+      </section>
+
+      <section>
+        <h2>Version Control and GitHub Usage</h2>
+        <p>
+          GitHub was used throughout the development of this project to manage version control.
+          Regular commits were made on different dates with meaningful commit messages to
+          document the progress of the website. This allowed me to track changes, experiment
+          safely, and revert to earlier versions when necessary.
+        </p>
+      </section>
+
+      <section>
+        <h2>Use of Generative AI</h2>
+        <p>
+          Generative AI tools were used in an assistive role to help understand HTML and CSS
+          concepts and to debug layout and responsiveness issues. All code was written, tested,
+          and fully understood by me in accordance with the module’s academic integrity and
+          Generative AI guidelines.
+        </p>
+      </section>
+
+      <section>
+        <h2>Video Demonstration</h2>
+        <p>
+          Video demonstration:
+          <a href="https://youtube.com/embed/YLpw048eqnQ" target="_blank">
+            Watch Video
+          </a>
+        </p>
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Portfolio</p>
+  </footer>
 
 </body>
 </html>
